@@ -1,6 +1,6 @@
-pip install streamlit
-pip install -U langchain-core
-pip install -U langchain-openai
-pip install -U langchain-anthropic
-pip install langchain-anthropic
-pip install langchain-google-genai
+streamlit
+-U langchain-core
+-U langchain-openai
+-U langchain-anthropic
+langchain-anthropic
+langchain-google-genai
