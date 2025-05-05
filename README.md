@@ -1,1 +1,9 @@
 # streamlit-application
+
+#外部ライブラリ
+pip install srtreamlit
+pip install -U langchain-core
+pip install -U langchain-openai
+pip install -U langchain-anthropic
+pip install langchain-anthropic
+pip install langchain-google-genai
