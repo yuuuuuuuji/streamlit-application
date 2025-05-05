@@ -1,6 +1,6 @@
 streamlit
--U langchain-core
--U langchain-openai
--U langchain-anthropic
+langchain-core
+langchain-openai
+langchain-anthropic
 langchain-anthropic
 langchain-google-genai
