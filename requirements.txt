@@ -1,6 +1,11 @@
+openai
+anthropic
+google-generativeai
+tiktoken
 streamlit
+langcahin
 langchain-core
+langchain-community
 langchain-openai
-langchain-anthropic
 langchain-anthropic
 langchain-google-genai
