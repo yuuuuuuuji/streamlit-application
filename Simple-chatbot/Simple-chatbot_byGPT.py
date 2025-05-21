@@ -7,7 +7,8 @@ from langchain_openai import ChatOpenAI #pip install -U langchain-openai
 from langchain_anthropic import ChatAnthropic #pip install -U langchain-anthropic pip install langchain-anthropic
 from langchain_google_genai import ChatGoogleGenerativeAI #pip install langchain-google-genai
 
-#$env:OPENAI_API_KEY = "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"
+
+
 
 MODEL_PRICES = {
     "input": {
