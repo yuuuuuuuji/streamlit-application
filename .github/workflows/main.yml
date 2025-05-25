@@ -3,7 +3,7 @@ name: Run Python Script
 on:
   push:
     branches: [ main ]
-  workflow_dispatch:  # ← 手動実行も可
+  workflow_dispatch:
 
 jobs:
   run-script:
@@ -11,21 +11,22 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
         python-version: '3.10'
+
     - name: Install dependencies
-      run: |
-        pip install -r Simple-chatbot/requirements.txt
+      run: pip install -r Simple-chatbot/requirements.txt
+
     - name: Run script
       env:
         OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-      run:
-        python Simple-chatbot/Simple-chatbot_byGPT.py
+      run: python Simple-chatbot/Simple-chatbot_byGPT.py
 
     - name: Upload report.html
       uses: actions/upload-artifact@v3
       with:
         name: report
-        path: report.html
+        path: Simple-chatbot/report.html  # ← HTML出力場所に合わせる
