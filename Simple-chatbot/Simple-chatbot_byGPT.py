@@ -12,6 +12,11 @@ from langchain_google_genai import ChatGoogleGenerativeAI #pip install langchain
 # 環境変数を取得
 api_key = os.getenv("OPENAI_API_KEY")
 
+# Simple-chatbot_byGPT.py の中
+with open("Simple-chatbot/report.html", "w", encoding="utf-8") as f:
+    f.write("<html><body><h1>Hello from chatbot!</h1></body></html>")
+
+
 MODEL_PRICES = {
     "input": {
         "gpt-3.5-turbo": 0.5 / 1_000_000,
