@@ -11,7 +11,6 @@ from langchain_google_genai import ChatGoogleGenerativeAI #pip install langchain
 
 # 環境変数を取得
 api_key = os.getenv("OPENAI_API_KEY")
-openai.api_key = api_key
 
 MODEL_PRICES = {
     "input": {
