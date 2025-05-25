@@ -23,3 +23,9 @@ jobs:
         OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
       run:
         python Simple-chatbot/Simple-chatbot_byGPT.py
+
+    - name: Upload report.html
+      uses: actions/upload-artifact@v3
+      with:
+        name: report
+        path: report.html
