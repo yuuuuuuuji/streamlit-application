@@ -1,5 +1,6 @@
 openai
 anthropic
+requests
 google-generativeai
 tiktoken
 streamlit
