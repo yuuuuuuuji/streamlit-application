@@ -1,7 +1,6 @@
 import tiktoken
 import streamlit as st #pip install srtreamlit
 import os
-from dotenv import load_dotenv
 from langchain_core.prompts import ChatPromptTemplate #pip install -U langchain-core
 from langchain_core.output_parsers import StrOutputParser #pip install -U langchain-core
 
@@ -9,12 +8,9 @@ from langchain_openai import ChatOpenAI #pip install -U langchain-openai
 from langchain_anthropic import ChatAnthropic #pip install -U langchain-anthropic pip install langchain-anthropic
 from langchain_google_genai import ChatGoogleGenerativeAI #pip install langchain-google-genai
 
-# .env ファイルの内容を読み込む
-load_dotenv()
-
 # 環境変数を取得
-api_key = os.getenv("https://github.com/yuuuuuuuji/OPENAI_API/blob/main/API_simple-chatbot.env")
-
+api_key = os.getenv("OPENAI_API_KEY")
+openai.api_key = api_key
 
 MODEL_PRICES = {
     "input": {
