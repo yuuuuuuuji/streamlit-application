@@ -1,6 +1,7 @@
 import tiktoken
 import streamlit as st #pip install srtreamlit
 import os
+import openai
 from langchain_core.prompts import ChatPromptTemplate #pip install -U langchain-core
 from langchain_core.output_parsers import StrOutputParser #pip install -U langchain-core
 
